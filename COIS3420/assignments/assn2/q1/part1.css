@@ -1,0 +1,71 @@
+/*
+COIS 3420 - Web Application Development
+
+Assignment 2 - Question 1 Part A
+Prepared by Alisher Turubayev, 0630908
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+/* Class selectors - as per assignment instructions */
+.griff {
+    color: #660000;
+}
+
+.rav {
+    color: #000066;
+}
+
+/* Type selectors - for additional styling */
+/* body: 
+    full-screen filler (using 100vw and 100 vh to ensure full screen is covered) 
+    all contents are centered using display: flex 
+    gradient applied for more styling
+*/
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #FFFFFF, #2a623d);
+}
+
+/* div:
+    takes exactly half the space on screen (50% of parent, i.e. body)
+    also centers content 
+    uses column direction instead of row because contains a list
+    white background for better contrast ratio
+*/
+div {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+
+/* text styling (h1, li):
+    applied sans-serif font family for better looks tbh
+    margin for better spacing betweent the list items and header
+*/
+h1, h2, li {
+    font-family: 'Spartan', sans-serif;
+    margin: 0.5em;
+}
+
+/* ul:
+    removed bullet point for better presentation
+    because of previous point, removed margins and padding
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

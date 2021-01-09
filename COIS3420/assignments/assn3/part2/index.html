@@ -1,0 +1,176 @@
+<!--
+COIS 3420 - Web Application Development
+
+Assignment 3 - Question 2
+Prepared by Alisher Turubayev, 0630908
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 3 Question 2 by Alisher Turubayev</title>
+        <!-- Include CSS/JS for the page - loading can be deferred -->
+        <link rel="stylesheet" href="part2.css">
+        <script defer src="scripts/index.js"></script>
+        <!-- Include CSS/JS for highlight.js - needs to load sync. -->
+        <link rel="stylesheet"
+            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>highlight.js - take your coding to the next level</h1>
+            <section>
+                <h2>Introduction</h2>
+                <p>
+                    highlight.js is a highly customizable Javascript library that gives you full power over the code highlighting on your
+                    page. Get the most popular highlighting styles or create your own with the help of an extensive library API. By
+                    leveraging the power of highlight.js, find the best way to present your code!
+                </p>
+                <h3>Discussion on pros and cons</h3>
+                <p>
+                    In my opinion, customization of highlight.js comes at the cost of simplicity: getting started is a full process, with
+                    various ways to get started with the library. The documentation can also be overwhelming, with several points of
+                    information (like GitHub, Library API, and a dedicated website) confusing the potential user. Additionally, developers
+                    don't say anything about accessibility, which might create concerns for users who use screen readers. However, the
+                    performance is steadfast (with the load times under 1-2 seconds from the Loki server at Trent). Finally, with the heavy
+                    customization options, one can expect to increase the performance even further by choosing only the languages that will
+                    be present on the page. 
+                </p>
+            </section>
+            <section>
+                <h2>Get started</h2>
+                <p>
+                    Developers give a variety of options for installing the library. I personally recommend the easiest one: by linking it
+                    to the page with one of the styles in the <code>&lt;head&gt;</code> tag:
+                
+                    <pre class="initial">
+                        <code class="html">
+&lt;link rel="stylesheet" 
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/default.min.css"&gt;
+&lt;script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"&gt;&lt;/script&gt;
+                        </code>
+                    </pre>
+                    Right after that, you can include the following line to automatically highlight all code pieces:
+                    <pre class="initial">
+                        <code class="html">
+&lt;script&gt;hljs.initHighlightingOnLoad();&lt;/script&gt;
+                        </code>
+                    </pre>
+                    This code will run highlighting on all code blocks after the DOM has loaded.
+                    To designate a particular part as a code snippet, use <code>&lt;pre&gt;&lt;code&gt;</code> tags like this:
+                    <pre class="initial">
+                        <code class="html">
+&lt;pre&gt;
+    &lt;code&gt;
+        &lt;!-- Your code goes here --&gt;
+    &lt;/code&gt;
+&lt;/pre&gt;
+                        </code>
+                    </pre>
+                    You are all set!
+                </p>
+            </section>
+            <section>
+                <h2>More features</h2>
+                <h3>Specifying a particular language:</h3>
+                <p>
+                    By default, highlight.js tries to automatically detect the language. However, what if
+                    you want to lock the language? Add a <code>class="desired-language"</code> to <code>&lt;code&gt;</code> element (note: not <code>&lt;pre&gt;</code>!), for
+                    example <code>class="java"</code>
+                    to force the language highlighting to Java. You can also use 'lang-' and 'language-' prefixes, like this:
+                    <code>class="lang-java"</code>.
+                </p>
+                
+                <h3>Creating a custom package:</h3>
+                <p>
+                    By following <a href="https://highlightjs.org/download/" rel="external">this link</a>, you can create a custom package with the
+                    languages you will use on your page. Select needed
+                    languages, upload the library directly to your server, and enjoy a significant boost in performance!
+                </p>
+                <h3>Using different themes:</h3>
+                <p>
+                    By changing the CSS link, you can change the syntax highlighting to a different style you prefer better. For a GitHub
+                    style, you can use this link for CSS:
+                    <pre class="initial">
+                        <code>
+&lt;link rel="stylesheet"
+    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css"&gt;
+                        </code>
+                    </pre>
+                    Click on a button to change style of the entire page to GitHub theme!
+                    <button aria-hidden="true" id="change-theme">Press for theme change!</button>
+                </p>
+                <h3>Highlighting code blocks separately:</h3>
+                <p>
+                    What if you want to highlight the blocks separately? There is a special function for that.
+                    By using <code>hljs.highlightBlock(Element element)</code> function, you can turn on highlighting for 
+                    only specific blocks or activate them when needed. For example:
+                    <h5>HTML</h5>
+                    <pre class="initial">
+                        <code>
+&lt;pre class="hglt-after-press"&gt;
+    &lt;code class="java"&gt;
+        System.out.println("I love highlight.js!");
+    &lt;/code&gt;
+&lt;/pre&gt;    
+
+&lt;button id="hglt-on-press"&gt;Highlight!&lt;/button&gt;
+                        </code>
+                    </pre>
+                    <h5>JS</h5>
+                    <pre class="initial">
+                        <code>
+// Find the code enclosement by selector (you need to select the code, not pre element)
+var code_snippet = document.querySelector(".hglt-after-press code");
+// Find the button and attach the eventListener that will highlight 
+// the code_snippet on a click of a button
+var btn = document.querySelector("#hglt-on-press");
+btn.addEventListener('click', () => {
+    hljs.highlightBlock(code_snippet);
+});
+                        </code>
+                    </pre>
+                    To test this code, click the button below!
+                    <pre class="hglt-after-press">
+                        <code class="java">
+System.out.println("I love highlight.js!");
+                        </code>
+                    </pre>    
+                    
+                    <button id="hglt-on-press" aria-hidden="true">Highlight!</button>
+                </p>
+                <h3>Displaying code as plaintext:</h3>
+                <p>
+                    What if you want no highlighting? Just include a <code>class="plaintext"</code> 
+                    for the <code>&lt;code&gt;</code> element.
+                    <pre class="initial">
+                        <code class="plaintext">
+This text is not formatted, as class "plaintext" is used.
+                        </code>
+                    </pre>
+                </p>
+                <h3>Disabling highlighting</h3>
+                <p>
+                    What if the highlighting must be completely disabled? You can do that by adding
+                    <code>class="nohighlight"</code> to the <code>&lt;code&gt;</code> element. 
+                    
+                    But if you want to disable highlighting after the page was loaded, you can remove the
+                    <code>"hljs"</code> from <code>classList</code> of particular code section. Click the button to test this out:
+                    <pre class="initial rmv-hglt">
+                        <code class="java">
+System.out.println("This library is lit! (Just as my deadlines (I need help please)!)");
+                        </code>
+                    </pre>
+                    <button id="nohglt-on-press" aria-hidden="true">Unhighlight!</button>
+                </p>
+            </section>
+            <section>
+                <h2>Useful links</h2>
+                <h4><a rel="external" href="https://highlightjs.org/">Official page</a></h4>
+                <h4><a rel="external" href="https://github.com/highlightjs/highlight.js">GitHub Repository</a></h4>
+                <h4><a rel="external" href="https://highlightjs.readthedocs.io/en/latest/api.html">Library API (for more advanced information)</a></h4>
+            </section>
+        </div>
+    </body>
+</html>

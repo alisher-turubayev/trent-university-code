@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 15 for Windows Desktop
+VisualStudioVersion = 15.0.27130.2020
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab5_2", "Lab5_2\Lab5_2.csproj", "{2B671A7B-27E9-4E94-92EC-604449EB1CF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B671A7B-27E9-4E94-92EC-604449EB1CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B671A7B-27E9-4E94-92EC-604449EB1CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B671A7B-27E9-4E94-92EC-604449EB1CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B671A7B-27E9-4E94-92EC-604449EB1CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3AE9C94-2E9E-4C62-80A3-2902ED95AB19}
+	EndGlobalSection
+EndGlobal

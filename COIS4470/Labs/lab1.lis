@@ -1,0 +1,159 @@
+    Student GPSS/H Release 3.70 (EC236)     14 Feb 2019   11:22:58     File: lab1.gps
+
+    Line# Stmt#  If Do  Block#  *Loc	Operation	A,B,C,D,E,F,G	Comments  
+ 
+        1     1                 *123456789012345678901234567890
+        2     2                           SIMULATE
+        3     3                           INTEGER    &LIMIT
+        4     4                           LET        &LIMIT=100
+        5     5                 * Statements of simulation
+        6     6                   SEATS   STORAGE    3
+        7     7              1            GENERATE   12,7
+        8     8              2            QUEUE      LINE
+        9     9              3            ENTER      SEATS
+       10    10              4            SEIZE      CHECKOUT
+       11    11              5            LEAVE      SEATS
+       12    12              6            TABULATE   RES
+       13    13              7            ADVANCE    18,2
+       14    14              8            RELEASE    CHECKOUT
+       15    15              9            DEPART     LINE
+       16    16             10            TERMINATE  1
+       17    17                 * Table
+       18    18                  RES      TABLE      M1,20,10,5
+       19    19                           START      &LIMIT
+       20    20                           END
+
+Entity Dictionary (in ascending order by entity number; "*" => value conflict.)
+
+       Facilities: 1=CHECKOUT
+
+           Queues: 1=LINE
+
+         Storages: 1=SEATS
+
+           Tables: 1=RES
+
+    Integer &Vars: 1=LIMIT
+
+Symbol   Value   EQU Defns  Context      References by Statement Number
+ 
+CHECKOUT     1              Facility        10    14
+ 
+LINE         1              Queue            8    15
+ 
+SEATS        1           6  Storage          9    11
+ 
+RES          1          18  Table           12
+ 
+LIMIT        1           3  Integer          4    19
+
+
+
+Storage Requirements (Bytes)
+
+Compiled Code:      448
+Compiled Data:       40
+Miscellaneous:        0
+Entities:           760
+Common:           10000
+-----------------------
+Total:            11248
+
+
+
+GPSS/H Model Size:
+
+Control Statements      6
+Blocks                 10
+
+
+
+Simulation begins.
+
+Relative Clock: 1822.1308   Absolute Clock: 1822.1308
+
+
+
+Block Current     Total  
+1                   153 
+2          50       153 
+3           3       103 
+4                   100 
+5                   100 
+6                   100 
+7                   100 
+8                   100 
+9                   100 
+10                  100 
+
+
+
+          --Avg-Util-During--                                                               
+Facility  Total  Avail  Unavl     Entries    Average   Current  Percent  Seizing  Preempting
+           Time   Time   Time               Time/Xact   Status   Avail     Xact      Xact   
+CHECKOUT  0.995                       100      18.133    AVAIL                  
+
+
+
+          --Avg-Util-During--                                                                                          
+ Storage  Total  Avail  Unavl     Entries    Average   Current  Percent    Capacity     Average     Current     Maximum
+           Time   Time   Time               Time/Unit   Status   Avail                 Contents    Contents    Contents
+   SEATS  0.960                       103      50.955    AVAIL   100.0            3       2.880           3           3
+
+
+
+   Queue     Maximum      Average       Total        Zero     Percent      Average      $Average     Qtable     Current
+            Contents     Contents      Entries     Entries     Zeros      Time/Unit    Time/Unit     Number    Contents
+    LINE          54       26.100         153           0                  310.838       310.838                     53
+
+
+
+Table      RES
+
+Entries in Table   Mean Argument   Standard Deviation   Sum of Arguments
+        100.0000        289.1588             175.9333         28915.8767   Non-Weighted
+
+       Upper    Observed     Percent  Cumulative  Cumulative    Multiple   Deviation
+       Limit   Frequency    of Total  Percentage   Remainder     of Mean   From Mean
+     20.0000      6.0000      6.0000        6.00       94.00      0.0692     -1.5299
+        ...
+     40.0000      1.0000      1.0000        7.00       93.00      0.1383     -1.4162
+     50.0000      2.0000      2.0000        9.00       91.00      0.1729     -1.3594
+    Overflow     91.0000       91.00      100.00        0.00
+
+Average value of overflow is     315.7119
+
+  Random    Antithetic     Initial     Current      Sample   Chi-Square
+  Stream      Variates    Position    Position       Count   Uniformity
+       1           OFF      100000      100254         254      0.93
+
+
+
+Status of Common Storage
+
+    2952 bytes available
+    7048 in use
+    7176 used (max)
+
+Simulation complete.  Absolute Clock: 1822.1308
+
+
+
+Total Block Executions: 1109
+
+Blocks / second:        3275251
+
+Microseconds / Block:   0.31
+
+
+
+Elapsed Time Used (Sec)
+ 
+Pass1:           0.00
+Sym/Xref         0.00
+Pass2:           0.00
+Load/Ctrl:       0.09
+Execution:       0.00
+Output:          0.00
+---------------------
+Total:           0.10

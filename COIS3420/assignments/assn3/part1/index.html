@@ -1,0 +1,111 @@
+<!--
+COIS 3420 - Web Application Development
+
+Assignment 3 - Question 1
+Prepared by Alisher Turubayev, 0630908
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Assignment 3 Question 1 by Alisher Turubayev</title>
+        <!-- Viewport optimization from W3Schools https://www.w3schools.com/css/css_rwd_viewport.asp -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS and Javascript -->
+        <link rel="stylesheet" href="part1.css">
+        <script defer src="scripts/index.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <h1>Javascript - fun for the entire family!</h1>
+            <p>Please make sure your Javascript is enabled</p>
+
+            <section class="part1">
+                <h2>Disappearing text</h2>
+                <p>
+                    This text will disappear when you click on it!
+                </p>
+            </section>
+
+            <section class="part2">
+                <h2>Changing background</h2>
+                <ul>
+                    <li>Click on me!</li>
+                    <li>No, on me!</li>
+                    <li>minemineminemine</li>
+                    <li>Previous item is a reference</li>
+                </ul>
+            </section>
+
+            <section class="part3">
+                <h2>Two types of clicks - two different colors</h2>
+                <p>
+                    This text will change to red if clicked once, to pink if clicked twice!
+                </p>
+            </section>
+
+            <section class="part4">
+                <h2>Text cloning (not possible in real life *sad face*)</h2>
+                <label for="clonefield">Put anything here and it will clone to the paragraph below!</label>
+                <input type="text" id="clonefield" maxlength="100" value="Hi. I am sad" />
+                <p></p>
+            </section>
+
+            <section class="part5">
+                <h2>Size changing</h2>
+                <div style="height: 10em; width: 10em;" class="purple"></div>
+                <label for="height">Increase height by:
+                    <input type="number" id="height" name="height" min="-10" max="10" />
+                </label>
+                <label for="width">Increase width by:
+                    <input type="number" id="width" name="width" min="-10" max="10" />
+                </label>
+                <button type="submit">Sumbit</button>
+            </section>
+
+            <section class="part6">
+                <h2>Adding children (to combat grey tsunami)</h2>
+                <ul>
+                    <li>Click on any of us</li>
+                    <li>to create a new child</li>
+                    <li>in this unordered</li>
+                    <li>list. New children</li>
+                    <li>will also be clickable</li>
+                </ul>
+            </section>
+
+            <section class="part7">
+                <h2>Convoluted list operations - don't know what that means</h2>
+                <!-- 
+                The entire list is written in one line to avoid the problem
+                of whitespace in DOM NodeList that this part's script relies on.
+                The reference from MDN web docs mentions that there are several
+                functions of JS that allow to avoid #text nodes, but in order
+                to have a workable live NodeList, I chose to not use them. Link:
+                https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace
+                -->
+                <ul><li>Delete me!</li><li>Turn text pink yay</li><li>Me too please aaa</li><li>I can also turn it pink</li><li>Existence is pain</li><li>Pink is my favorite color</li></ul>
+            </section>
+
+            <section class="part8">
+                <h2>Simple fetch (not at all simple in my humble opinion)</h2>
+                <div>
+                    <h3>Soviet Union</h3>
+                    <p>
+                        The Soviet Union, officially known as the Union of Soviet Socialist Republics (USSR or СССР), was a federal
+                        socialist state in Northern Eurasia that existed from 1922 to 1991. Nominally a union of multiple national Soviet
+                        republics, in practice its government and economy were highly centralized. The country was a one-party state,
+                        governed by the Communist Party with Moscow as its capital in its largest republic, the Russian Soviet Federative
+                        Socialist Republic (Russian SFSR). Other major urban centers were Leningrad, Kiev, Minsk, Tashkent, Alma-Ata, and
+                        Novosibirsk. It spanned over 10,000 kilometers (6,200 mi) east to west across 11 time zones, and over 7,200 kilometers
+                        (4,500 mi) north to south. Its territory included much of Eastern Europe, as well as part of Northern Europe and all of
+                        Northern and Central Asia. It had five climate zones: tundra, taiga, steppes, desert and mountains.
+                        <a href="https://en.wikipedia.org/wiki/Soviet_Union" rel="external">Read more about Soviet Union here</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

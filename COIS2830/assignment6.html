@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment 6</title>
+
+    <!-- CSS and fonts import -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!---Metadata-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Alisher Turubayev Assignment 6">
+    <meta name="keywords" content="Alisher, Turubayev, assignment 6">
+    <meta name="author" content="Alisher Turubayev">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon script-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+    <!-- Invisible link to main content -->
+    <div id="skip">
+      <a href="#maincontent">Skip to main content</a>
+    </div>
+
+    <div class="header">
+      <div class="logo">
+        <img class="logo-img" src="images/logo.png" alt="Alisher Turubayev logo">
+      </div>
+
+      <div class="nav-menu">
+        <form action="index.html#projects">
+          <button class="menu-btn">Back</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="maincontent" class="description">
+      <h1 class="centered">Assignment 6</h1>
+      <p>
+        In this assignment, I chose to make a game in Arma 3 Eden Editor. The video below will discuss the implementation
+        and some design choices that I have made, as well as demostrate the walkthough. The small essay afterwards will
+        demonstate how I meet the assignment requirements.
+      </p>
+      <div class="container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vQ75pP8lLkk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <h3>Point-by-point analysis</h3>
+      <ol>
+        <li>
+          There is not much choice in my campaign until the last mission, where the player gets to lead a squad. The AI team
+          leader gives waypoints to assist the player. As I have said in the video, my campaign is tailored for new players,
+          so I give little variability in terms of playthrough. However, the player can refrain from following direct commands
+          and just can charge at enemy. This tactic is, however, inefficient and puts the player at risk of losing, because there
+          will be no fire support from the squad. In the last part, the player is given the full freedom, both in terms of
+          loadout choice and in tactics. This increases the difficulty and makes campaign a little more interesting.
+          At the end of the day, the focus is to teach the player on how to play Arma 3.
+        </li>
+        <li>
+          The pacing is slow, because the target players are the ones who just started the game. For them, slow pacing will
+          ensure the best understanding of the game mechanics.
+        </li>
+        <li>
+          My campaign allows the player to experience all important parts of the gameplay: infantry/vehicle controls and squal
+          leading. In the first part, I focus mainly on controls, allowing the player to use the vehicle. In the second part,
+          it's more about the shooting part of the gameplay. Finally, the third part focuses intensely on the squad leading.
+        </li>
+        <li>
+          My campaign is using the built-in models of CSAT, FIA and NATO forces. The season is summer, so all of the forces
+          have camo. The vehicles are also colored accordingly.
+        </li>
+        <li>
+          I am using increasing difficulty, paired with interesting game mechanics (squad leading) to create a joyful
+          experience. As for the uniqueness, my approach is not that unique, because it is (kinda) used in the Arma 3
+          campaign. However, I have paired it with playing for CSAT, which is not done in the included missions, thus
+          creating a nice gaming experience.
+        </li>
+      </ol>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img class="logo-footer-img" src="images/logo-invert.png" alt="Alisher Turubayev logo">
+        </div>
+      </div>
+      <p class="centered white-text">Student under a Rainy Cloud</p>
+      <div class="container">
+        <form action="https://www.linkedin.com/in/alisherturubayev/" target="_blank">
+          <button class="icon-btn" title="LinkedIn profile">
+            <img src="https://img.icons8.com/ios-glyphs/50/333333/linkedin-circled.png">
+          </button>
+        </form>
+        <form action="https://twitter.com/rainystudent" target="_blank">
+          <button class="icon-btn" title="Twitter profile">
+            <img src="https://img.icons8.com/ios-glyphs/50/333333/twitter.png">
+          </button>
+        </form>
+        <form action="https://github.com/alisher-turubayev" target="_blank">
+          <button class="icon-btn" title="GitHub profile">
+            <img src="https://img.icons8.com/ios-glyphs/50/333333/github.png">
+          </button>
+        </form>
+      </div>
+      <p class="centered small white-text">Created by Me @ 2018</p>
+      <p class="centered small white-text">Thanks to Figma, W3Schools</p>
+      <div class="container">
+        <a class="small" href="https://icons8.com">Icon pack by Icons8</a>
+      </div>
+
+    </div>
+  </body>
+</html>

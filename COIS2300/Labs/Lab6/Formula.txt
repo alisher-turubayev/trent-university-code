@@ -1,0 +1,3 @@
+To get address:
+DATASIZE * (i + numRows * j)
+	considering that i and j are 0-based indecies

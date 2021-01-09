@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CoolGear Ltd. - Add a new manufacturer</title>
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="description" content="Database Console for CoolGear Ltd. company">
+    <meta name="keywords" content="CoolGear, database, console">
+    <meta name="author" content="Alisher Turubayev and Vanshree Mathur">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <div>
+      <h1 class="centered">Add a new manufacturer</h1>
+    </div>
+
+    <div class="container-center">
+      <form method="post">
+        <label>Name</label>
+        <input type="text" name="manufName" size="50">
+        <label>Address</label>
+        <input type="text" name="manufAddress" size="255">
+        <label>Phone number</label>
+        <input type="text" name="manufPhone" size="32">
+        <label>Email</label>
+        <input type="text" name="manufEmail" size="60" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        <br>
+        <input type="submit" value="Add manufacturer">
+      </form>
+    </div>
+
+    <p class="centered small">Note: manufacturer ID is assigned automatically</p>
+
+    <div class="container-center">
+      <a href="index.html">Go back</a>
+    </div>
+  </body>
+</html>

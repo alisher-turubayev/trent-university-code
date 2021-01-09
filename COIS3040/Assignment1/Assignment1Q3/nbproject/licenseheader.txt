@@ -1,0 +1,12 @@
+<#if licenseFirst??>
+${licenseFirst}
+</#if>
+${licensePrefix}COIS 3040 - Assignment #3
+${licensePrefix}Trent University
+${licensePrefix}
+${licensePrefix}Question #3
+${licensePrefix}Assignment Group: Alisher Turubayev & Vanshree Mathur
+${licensePrefix}
+<#if licenseLast??>
+${licenseLast}
+</#if>

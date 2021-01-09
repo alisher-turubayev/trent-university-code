@@ -1,0 +1,131 @@
+    Student GPSS/H Release 3.70 (EC236)     24 Feb 2019   18:43:34     File: C:\Users\Alisher\Desktop\University\2018-2019 Winter\COIS4470\Assignments\Assignment 2\GPSS\Question4c.gps
+
+    Line# Stmt#  If Do  Block#  *Loc	Operation	A,B,C,D,E,F,G	Comments  
+ 
+        1     1                 *12345678901234567890123456789
+        2     2                           SIMULATE
+        3     3              1            GENERATE   180,180
+        4     4              2            QUEUE      WAIT1
+        5     5              3            QUEUE      WAIT2
+        6     6              4            QUEUE      WAIT3
+        7     7              5            SEIZE      INTERCOM
+        8     8              6            DEPART     WAIT1
+        9     9              7            ADVANCE    180,60
+       10    10              8            RELEASE    INTERCOM
+       11    11              9            DEPART     WAIT2
+       12    12             10            ADVANCE    15,3
+       13    13             11            SEIZE      WINDOW
+       14    14             12            DEPART     WAIT3
+       15    15             13            ADVANCE    180,120
+       16    16             14            RELEASE    WINDOW
+       17    17             15            TERMINATE  1
+       18    18                 *
+       19    19                           START      100
+       20    20                           END
+
+Entity Dictionary (in ascending order by entity number; "*" => value conflict.)
+
+       Facilities: 1=INTERCOM      2=WINDOW
+
+           Queues: 1=WAIT1         2=WAIT2         3=WAIT3
+
+Symbol   Value   EQU Defns  Context      References by Statement Number
+ 
+INTERCOM     1              Facility         7    10
+WINDOW       2              Facility        13    16
+ 
+WAIT1        1              Queue            4     8
+WAIT2        2              Queue            5    11
+WAIT3        3              Queue            6    14
+
+
+
+Storage Requirements (Bytes)
+
+Compiled Code:      380
+Compiled Data:       40
+Miscellaneous:        0
+Entities:           504
+Common:           10000
+-----------------------
+Total:            10924
+
+
+
+GPSS/H Model Size:
+
+Control Statements      3
+Blocks                 15
+
+
+
+Simulation begins.
+
+Relative Clock: 18936.6299   Absolute Clock: 18936.6299
+
+
+
+Block Current     Total  Block Current     Total  
+1                   103  11                  100 
+2                   103  12                  100 
+3                   103  13                  100 
+4           1       103  14                  100 
+5                   102  15                  100 
+6                   102 
+7           1       102 
+8                   101 
+9                   101 
+10          1       101 
+
+
+
+          --Avg-Util-During--                                                               
+Facility  Total  Avail  Unavl     Entries    Average   Current  Percent  Seizing  Preempting
+           Time   Time   Time               Time/Xact   Status   Avail     Xact      Xact   
+INTERCOM  0.954                       102     177.162    AVAIL              102 
+  WINDOW  0.957                       100     181.205    AVAIL                  
+
+
+
+   Queue     Maximum      Average       Total        Zero     Percent      Average      $Average     Qtable     Current
+            Contents     Contents      Entries     Entries     Zeros      Time/Unit    Time/Unit     Number    Contents
+   WAIT1           5        1.469         103          11       10.7       269.992       302.274                      1
+   WAIT2           6        2.423         103           0                  445.434       445.434                      2
+   WAIT3           7        3.878         103           0                  712.962       712.962                      3
+
+
+
+  Random    Antithetic     Initial     Current      Sample   Chi-Square
+  Stream      Variates    Position    Position       Count   Uniformity
+       1           OFF      100000      100407         407      0.89
+
+
+
+Status of Common Storage
+
+    9304 bytes available
+     696 in use
+    1448 used (max)
+
+Simulation complete.  Absolute Clock: 18936.6299
+
+
+
+Total Block Executions: 1521
+
+Blocks / second:        9937911
+
+Microseconds / Block:   0.10
+
+
+
+Elapsed Time Used (Sec)
+ 
+Pass1:           0.00
+Sym/Xref         0.00
+Pass2:           0.00
+Load/Ctrl:       0.00
+Execution:       0.00
+Output:          0.00
+---------------------
+Total:           0.00

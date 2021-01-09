@@ -1,0 +1,44 @@
+/*
+COIS 3420 - Web Application Development
+
+Assignment 2 - Question 3
+Prepared by Alisher Turubayev, 0630908
+*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+/* Create a full-screen body with no margins and padding */
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: seashell;
+    font-family: 'Quicksand', sans-serif;
+}
+
+div {
+    margin: auto;
+    padding: 4em 4em;
+    width: 70%;
+    background-color: white;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+/* Make the text fill the gaps so that it is easier to read */
+div > p, li {
+    width: 100%;
+    text-align: justify;
+}
+
+p.credits {
+    text-align: center;
+    font-size: 0.5em;
+}

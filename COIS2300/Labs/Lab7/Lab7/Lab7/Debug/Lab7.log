@@ -1,0 +1,4 @@
+﻿  Lab7.cpp
+c:\users\alisher\desktop\university\2018-2019 winter\cois2300\labs\lab 7\lab7\lab7\lab7.cpp(8): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\alisher\desktop\university\2018-2019 winter\cois2300\labs\lab 7\lab7\lab7\lab7.cpp(10): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  Lab7.vcxproj -> C:\Users\Alisher\Desktop\University\2018-2019 Winter\COIS2300\Labs\Lab 7\Lab7\Debug\Lab7.exe

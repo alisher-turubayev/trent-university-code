@@ -1,0 +1,20 @@
+*123456789012345678901234567890
+          SIMULATE
+          INTEGER    &LIMIT
+          LET        &LIMIT=100
+* Statements of simulation
+  SEATS   STORAGE    3
+          GENERATE   12,7
+          QUEUE      LINE
+          ENTER      SEATS
+          SEIZE      CHECKOUT
+          LEAVE      SEATS
+          TABULATE   RES
+          ADVANCE    18,2
+          RELEASE    CHECKOUT
+          DEPART     LINE
+          TERMINATE  1
+* Table
+ RES      TABLE      M1,20,10,5
+          START      &LIMIT
+          END

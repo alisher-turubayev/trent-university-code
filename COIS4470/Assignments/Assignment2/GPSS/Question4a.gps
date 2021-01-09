@@ -1,0 +1,16 @@
+*12345678901234567890123456789
+          SIMULATE
+          GENERATE   180,180
+          QUEUE      WAIT1
+          SEIZE      INTERCOM
+          DEPART     WAIT1
+          ADVANCE    180,60
+          RELEASE    INTERCOM
+          ADVANCE    15,3
+          SEIZE      WINDOW
+          ADVANCE    180,120
+          RELEASE    WINDOW
+          TERMINATE  1
+*
+          START      100
+          END

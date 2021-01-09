@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vote for New Product - Willy Wonka Factory</title>
+</head>
+<body>
+  <div id="container">
+	  <header>
+    </header>
+      <figure>
+        <img src="img/wonka.png" alt="Willy Wonka Factory Logo" height="230" width="300"/>
+        <figcaption>Willy Wonka Factory</figcaption>
+      </figure>
+    <nav>
+      <ul>
+        <li><a href="../lab1/index.html">Home</a></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form id="product_survey" action="/processvote.php" method="post">
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email"/>
+
+        <fieldset form="product_survey">
+          <legend>Your perspective:</legend>
+          <input type="radio" name="perspective" value="Customer" id="customer" checked/>
+          <label for="customer">Customer</label>
+
+          <input type="radio" name="perspective" value="Reseller" id="reseller"/>
+          <label for="reseller">Reseller</label>
+
+          <input type="radio" name="perspective" value="Oompa-Loompa" id="oompa-loompa"/>
+          <label for="oompa-loompa">Oompa-Loompa</label>
+        </fieldset>
+
+        <label for="product-choice">What product you want to see?</label>
+        <select name="product-choice" id="product-choice">
+          <option value="chocolate">MORE Chocolate</option>
+          <option value="gum">Inflater Bubble Gum</option>
+          <option value="drink">Free Oompa-Loompas Drink</option>
+        </select>
+        <button type="submit">Vote</button>
+      </form>
+    </main>
+    <footer>
+      <span>&copy; Alisher Turubayev, 2019</span>
+    </footer>
+  </div>
+
+</body>
+</html>

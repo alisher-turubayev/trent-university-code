@@ -1,0 +1,66 @@
+<!--
+COIS 3420 - Web Application Development
+
+Assignment 2 - Question 3
+Prepared by Alisher Turubayev, 0630908
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>API for Assignment 2 by Alisher Turubayev</title>
+        <!-- Viewport optimization -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="q3.css">
+    </head>
+    <body>
+        <div>
+            <!-- Semantically use h1 and h2 for diving different blocks of text-->
+            <h1>Small API with my favourite products and their reviews!</h1>
+            <h2>Description:</h2>
+            <p>
+                Learn about my tastes, find good products, and read my mostly unbiased reviews! 
+                Also includes approximate pricing on each item (prices provided in Canadian dollars), and a final score!
+                Use this API whenever, wherever you go for absolutely no payment!
+            </p>
+            <h2>Functions:</h3>
+            <p>Currently supports three functions - I may add more for Assignment 3</p>
+            <ol>
+                <li>Find all products that I recommend</li> 
+                <li>Read all reviews for all products I have</li>
+                <li>Find all reviews for a particular product</li>
+            </ol>
+            <h2>Usage:</h2>
+            <ol>
+                <!--Read here that it's okay if the list item has paragraph: https://www.oxygenxml.com/dita/styleguide/webhelp-feedback/Artefact/Syntax_and_Markup/c_Paragraphs_within_List_Items.html-->
+                <li>
+                    <p>
+                        Use the following URL with no input: readAllProducts.php, 
+                        and get the products I recommend in a JSON encoding back.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Use the following URL with no input: readAllReviews.php,
+                        and get the reviews in a JSON encoding back.
+                        It automatically clusters the reviews for one product together, 
+                        so you get all information you need! 
+                        Note: reviews can have a score of null, this simply means that the most recent score remains.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Use findReviewByProduct.php and provide an ID of a product that you want reviews for.
+                        This returns all reviews for a particular product, 
+                        and allows you to make an informed decision about something!
+                        Note: reviews can have a score of null, this simply means that the most recent score remains.
+                    </p>
+                </li>
+            </ol>
+            
+            <!-- Just for fun - a small credits roll -->
+            <p class="credits">
+                Made using PHP, tears, sacrifice to the Devil and a lot of Diet Pepsi. And of course, a lot of love.
+            </p>
+        </div>
+    </body>
+</html>

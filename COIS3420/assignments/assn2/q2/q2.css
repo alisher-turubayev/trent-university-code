@@ -1,0 +1,78 @@
+/*
+COIS 3420 - Web Application Development
+
+Assignment 2 - Question 2
+Prepared by Alisher Turubayev, 0630908
+*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #FFFFFF, #2a623d);
+}
+
+div, form {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+div.cheatsheet {
+    width: 70%;
+    height: 100%;
+    padding: initial;
+    display: initial;
+}
+
+div.cheatsheet li {
+    text-align: justify;
+    font-family: 'Inter', sans-serif;
+}
+
+div.cheatsheet a {
+    font-size: 1.1em;
+    display: block;
+    margin: 1em;
+}
+
+div.question_holder {
+    padding: initial;
+    display: initial;
+}
+
+label {
+    display: block;
+}
+
+input[type="submit"] {
+    margin: 1em 0;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5em;
+    background-color: #2a623d;
+    color: #FFFFFF;
+    font-size: 1.2em;
+}
+
+/* text styling (h1, h4, h6, p, li, label, input):
+    applied sans-serif font family for better looks tbh
+    centered the text
+*/
+h1, h6, p, label {
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+li.correct {
+    color: green;
+}

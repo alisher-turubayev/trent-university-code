@@ -1,0 +1,7 @@
+C:\Users\Alisher Turubayev\Desktop\University\2017-2018 Winter\COIS1020\Labs\Lab 3\Lab3_1\Lab3_1\bin\Debug\Lab3_1.exe.config
+C:\Users\Alisher Turubayev\Desktop\University\2017-2018 Winter\COIS1020\Labs\Lab 3\Lab3_1\Lab3_1\bin\Debug\Lab3_1.exe
+C:\Users\Alisher Turubayev\Desktop\University\2017-2018 Winter\COIS1020\Labs\Lab 3\Lab3_1\Lab3_1\bin\Debug\Lab3_1.pdb
+C:\Users\Alisher Turubayev\Desktop\University\2017-2018 Winter\COIS1020\Labs\Lab 3\Lab3_1\Lab3_1\obj\Debug\Lab3_1.csprojResolveAssemblyReference.cache
+C:\Users\Alisher Turubayev\Desktop\University\2017-2018 Winter\COIS1020\Labs\Lab 3\Lab3_1\Lab3_1\obj\Debug\Lab3_1.csproj.CoreCompileInputs.cache
+C:\Users\Alisher Turubayev\Desktop\University\2017-2018 Winter\COIS1020\Labs\Lab 3\Lab3_1\Lab3_1\obj\Debug\Lab3_1.exe
+C:\Users\Alisher Turubayev\Desktop\University\2017-2018 Winter\COIS1020\Labs\Lab 3\Lab3_1\Lab3_1\obj\Debug\Lab3_1.pdb

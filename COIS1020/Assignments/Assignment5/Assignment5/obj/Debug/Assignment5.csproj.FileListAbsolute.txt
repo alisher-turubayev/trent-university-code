@@ -1,0 +1,7 @@
+C:\Users\Alisher Turubayev\source\repos\Assignment5\Assignment5\bin\Debug\Assignment5.exe.config
+C:\Users\Alisher Turubayev\source\repos\Assignment5\Assignment5\bin\Debug\Assignment5.exe
+C:\Users\Alisher Turubayev\source\repos\Assignment5\Assignment5\bin\Debug\Assignment5.pdb
+C:\Users\Alisher Turubayev\source\repos\Assignment5\Assignment5\obj\Debug\Assignment5.csprojResolveAssemblyReference.cache
+C:\Users\Alisher Turubayev\source\repos\Assignment5\Assignment5\obj\Debug\Assignment5.csproj.CoreCompileInputs.cache
+C:\Users\Alisher Turubayev\source\repos\Assignment5\Assignment5\obj\Debug\Assignment5.exe
+C:\Users\Alisher Turubayev\source\repos\Assignment5\Assignment5\obj\Debug\Assignment5.pdb

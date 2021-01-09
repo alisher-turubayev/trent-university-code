@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Cambay|Open+Sans&display=swap');
+
+/* Overarching classes:
+	 * body
+	 * banner: provides a flex-direction: row container
+	 * 	for better flow of the page
+	 * column: provides a flex-direction: column container
+	 * 	to better contain elements that are supposed to be
+	 *	read/consumed in a particular order downwards (dark-spanposts)
+	 *
+	 * All style declarations for these classes are included
+	 *	at the beginning of the page so that other classes can
+	 * 	change properties as needed
+	 */
+body {
+  margin: 0;
+  background-color: #3AAFA9;
+  color: #fff;
+  font-family: 'Cambay', sans-serif;
+}
+
+.banner {
+  width: 90%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.column {
+  width: 90%;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Specific styles for other elements/classes */
+.post a {
+  color: #3AAFA9;
+}
+
+.post a:visited {
+  color: #2B7A78;
+}
+
+.white-span {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 5em;
+  background-color: #fff;
+  color: #17252A;
+  /* TODO: Rewrite */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.white-span > div {
+  padding: 20px;
+  font-size: 0.9em;
+  text-align: justify;
+}
+
+.dark-span {
+  width: 80%;
+  padding: 20px;
+  background-color: #17252A;
+  /* TODO: Rewrite */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+#contact {
+  margin: 30px, auto;
+  /* TODO: Rewrite */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  background-color: #17252A;
+}
+
+#contact>h3 {
+  margin-bottom: 0;
+}
+
+div[class="column white-span"] {
+	justify-content: space-evenly;
+}
+
+div[class="column dark-span"] {
+	padding: 3em;
+	align-items: flex-start;
+}
+
+div[class="column dark-span"] h2 {
+	align-self: center;
+	color: #3AAFA9;
+}
+
+.external-links {
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+
+header > button, header > a,
+.internal-links>a {
+  background-color: #17252A;
+  color: #fff;
+  border-style: solid;
+  border-color: #17252A;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding: 2em;
+}
+
+header>button:hover, header > a:hover,
+.internal-links>a:hover {
+  background-color: #2B7A78;
+  border-color: #2B7A78;
+}
+
+figure {
+  margin: 20px;
+}
+
+figcaption {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+footer {
+  background-color: #2B7A78;
+  width: 100%;
+  margin: 5em 0 0 0;
+}
+
+header.banner {
+  justify-content: space-between;
+}
+
+.column > h4 {
+	font-weight: bold;
+	text-align: left;
+}
+
+div>h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 3em;
+  margin-bottom: 0.1em;
+}
+
+h1~h2 {
+  font-style: italic;
+  margin-top: 0.3em;
+  font-size: 1em;
+}
+
+.dark-span>h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2.5em;
+}
+
+.post>h2 {
+  color: #3AAFA9;
+}
+
+i {
+  font-size: 200%;
+  color: #17252A;
+}
+
+i:hover {
+  color: #fff;
+}
+
+img[src="img/logo-trent.jpg"] {
+  display: block;
+  width: 90%;
+  margin: 1em auto;
+}
+
+input[type="submit"] {
+  background-color: #3AAFA9;
+  color: #fff;
+  padding: 0.8em;
+  border-style: solid;
+  border-color: #3AAFA9;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+label, input, textarea {
+  margin: 0.3em 0;
+  font-size: 1.10em;
+  display: block;
+  text-align: center;
+}
+
+.column > p {
+  margin: 0;
+}
+
+.post p {
+  text-align: justify;
+}

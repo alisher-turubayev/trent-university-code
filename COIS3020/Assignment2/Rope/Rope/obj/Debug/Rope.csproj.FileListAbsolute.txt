@@ -1,0 +1,7 @@
+C:\Users\Alisher\Desktop\University\Repository\COIS3020\Assignment2\Rope\Rope\bin\Debug\Rope.exe.config
+C:\Users\Alisher\Desktop\University\Repository\COIS3020\Assignment2\Rope\Rope\bin\Debug\Rope.exe
+C:\Users\Alisher\Desktop\University\Repository\COIS3020\Assignment2\Rope\Rope\bin\Debug\Rope.pdb
+C:\Users\Alisher\Desktop\University\Repository\COIS3020\Assignment2\Rope\Rope\obj\Debug\Rope.csprojAssemblyReference.cache
+C:\Users\Alisher\Desktop\University\Repository\COIS3020\Assignment2\Rope\Rope\obj\Debug\Rope.csproj.CoreCompileInputs.cache
+C:\Users\Alisher\Desktop\University\Repository\COIS3020\Assignment2\Rope\Rope\obj\Debug\Rope.exe
+C:\Users\Alisher\Desktop\University\Repository\COIS3020\Assignment2\Rope\Rope\obj\Debug\Rope.pdb

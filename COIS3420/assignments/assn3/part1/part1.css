@@ -1,0 +1,80 @@
+/*
+COIS 3420 - Web Application Development
+
+Assignment 3 - Question 1
+Prepared by Alisher Turubayev, 0630908
+
+Notice:
+Colors were slightly changed to different ones to make sure that it looks nice
+(in my humble opinion)
+
+Russian violet for Purple (part 2)
+        #302F4D
+Japanese Carmine for Red (part 3)
+        #8B2635
+Plum (Web) for Pink (part 4)
+        #E18AD4
+*/
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+/* Type selectors for the page setup */
+a[rel="external"] {
+    display: block;
+    margin-top: 1em;
+}
+
+body {
+    background-color: #DCD6F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sen', sans-serif;
+}
+
+body > div {
+    background-color: white;
+    width: 70%;
+    margin: 3em auto;
+    padding: 3em;
+}
+
+input, button {
+    display: block;
+    font-size: 1em;
+    margin: 0.5em 0em;
+}
+
+ul {
+    padding: 2em;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Type selectors by part class for the page setup */
+.part5 > div {
+    margin: 1em 0em;
+}
+
+/* Class selectors for index.js script */
+.invisible {
+    visibility: hidden;
+}
+
+/* 
+Note: white text was added for better visibility
+ */
+.pink {
+    color: #E18AD4;
+}
+
+.purple {
+    background-color: #302F4D;
+    color: white;
+}
+
+.red {
+    color: #8B2635;
+}

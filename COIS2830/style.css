@@ -1,0 +1,283 @@
+/* For mobile */
+* {
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+code {
+  font-family: monospace;
+}
+
+/* Screen reader optimization - invisible link */
+#skip a {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+#skip a:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+/* ID styling */
+#projects {
+  width: 100%;
+  padding: 5px;
+}
+
+/* Div styling */
+div.header {
+  width: 100%;
+}
+div.logo {
+  width: 100%;
+}
+div.nav-menu {
+  width: 100%;
+  padding: 10px 5px;
+}
+div.description {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+div.breaker {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  background-color: #22a7f0;
+}
+div.col {
+  padding: 5px 15px 0px 15px;
+  width: 100%;
+}
+div.footer {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: #22a7f0;
+}
+div.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form styling */
+form.login {
+  display: block;
+  float: right;
+}
+
+/* Image styling */
+img.logo-img {
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+img.design-image {
+  width: 100%;
+}
+img.photo {
+  width: 40%;
+  margin: 5px;
+}
+
+/* Text styling */
+.centered {
+  text-align: center;
+}
+.justify {
+  text-align: justify;
+}
+.large {
+  font-size: large;
+}
+.small {
+  font-size: small;
+}
+.white-text {
+  color:white;
+  text-shadow: 0px 0px 2px black;
+}
+
+/* List styling */
+ul {
+  list-style-type: circle;
+}
+
+/* Button styling*/
+button.project {
+  width: 100%;
+  border: 5px solid #22a7f0;
+  border-radius: 4px;
+  padding: 10%;
+  display: inline-block;
+  background-color: white;
+}
+button.menu-btn {
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: #22a7f0;
+}
+button.icon-btn {
+  border: none;
+  cursor: pointer;
+  padding: 0%;
+  background-color: #22a7f0;
+}
+
+/* Forms styling */
+input[type=email], input[type=password], textarea {
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+input[type=submit] {
+  width: 90%;
+  margin: 5%;
+}
+
+/* For desktops */
+@media only screen and (min-width: 768px) {
+  /* ID styling */
+  #projects {
+    padding: 10px 10% 20px 10%;
+  }
+
+  /* Div styling */
+  div.header {
+    overflow: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  div.logo {
+    float: left;
+    padding: 5px;
+    width: 25%;
+  }
+  div.nav-menu {
+    width: 75%;
+    padding-top: 10px;
+    overflow: auto;
+  }
+  div.description {
+    padding: 5%;
+  }
+  div.design {
+    width: 100%;
+    height: auto;
+  }
+  div.breaker {
+    height: 300px;
+    padding: 5%;
+  }
+  div.row {
+    overflow: auto;
+    width: 100%;
+  }
+  div.col {
+    float: left;
+    width: 33.33%;
+    height: auto;
+    padding: 10px;
+  }
+  div.footer {
+    padding: 5%;
+  }
+  div.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div.footer-logo {
+    width: 25%;
+    padding: 5px;
+  }
+
+  /* Image styling */
+  img.logo-img {
+    display: inline;
+    width: 30%;
+    height: 30%;
+  }
+  img.design-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  img.logo-footer-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Button styling */
+  button.menu-btn {
+    width: auto;
+    color: black;
+    background-color: white;
+    font-size: large;
+    border: none;
+    float: right;
+    padding: 3%;
+  }
+  button.menu-btn:hover {
+    background-color: #22a7f0;
+    color: white;
+  }
+  button.project {
+    padding: 15%;
+    font-size: large;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  button.project:hover {
+    background-color: #22a7f0;
+    color: white;
+  }
+
+  /* Form input styling */
+  input[type=email], input[type=password], textarea {
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    font-size: large;
+    border: 1px solid #22a7f0;
+    background-color: white;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #22a7f0;
+    color: white;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+      width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: #888;
+  }
+}

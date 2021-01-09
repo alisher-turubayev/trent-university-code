@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Assignment 5</title>
+
+    <!-- CSS and fonts import -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!---Metadata-->
+    <meta charset="UTF-8">
+    <meta name="description" content="Alisher Turubayev Assignment 5">
+    <meta name="keywords" content="Alisher, Turubayev, assignment 5">
+    <meta name="author" content="Alisher Turubayev">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Favicon script-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+
+  <body>
+    <!-- Invisible link to main content -->
+    <div id="skip">
+      <a href="#maincontent">Skip to main content</a>
+    </div>
+
+    <div class="header">
+      <div class="logo">
+        <img class="logo-img" src="images/logo.png" alt="Alisher Turubayev logo">
+      </div>
+
+      <div class="nav-menu">
+        <form action="index.html#projects">
+          <button class="menu-btn">Back</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="maincontent" class="description">
+      <h1 class="centered">Assignment 5</h1>
+      <h3><a href="column-essay.html">Essay in columns</a></h3>
+      <h3>Website Optimization</h3>
+      <p>
+        My website design was mobile-friendly from the start. The style.css file features one breakpoint:
+        768px and wider, targeting desktops. I have consciously avoided adding a tablet breaker, as tablets only account to
+        <a href="http://gs.statcounter.com/platform-market-share/desktop-mobile-tablet">5% of worldwide traffic</a>.
+        I am using div tags for dividing the parts of my website (like div.header, div.footer and so on).
+      </p>
+      <pre>
+        <code title="CSS code snippet - Device configuration">
+          /* For mobile */
+          ...
+          @media only screen and (min-width: 768px) {
+            /* For desktops */
+            ...
+          }
+        </code>
+      </pre>
+      <h5>CSS code for desktop breakpoint</h5>
+
+      <p>
+        Resizing to a desktop from mobile centers the content, changes the image alignment and size.
+        The text size does not change in terms of code. Another thing I have added for certain desktops
+        is a custom scrollbar, that can be viewed if the page is loaded in Google Chrome or similar browsers.
+      </p>
+      <pre>
+        <code title="CSS code snippet - Custom scrollbar">
+          ::-webkit-scrollbar {
+            width: 5px;
+          }
+          ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+          }
+          ::-webkit-scrollbar-thumb {
+            background: #888;
+          }
+        </code>
+      </pre>
+      <h5>CSS code for custom scrollbar</h5>
+
+      <p>
+        For load times on desktop, I have used a website called <a href="https://tools.pingdom.com/">Pingtom Tools</a>,
+        and the result was 680ms for a user in Washington, DC. The performance grade given by the website was 82 out of 100.
+        The biggest part of loading my website was on fonts, as I am using a custom font from
+        <a href="https://fonts.google.com">Google Fonts</a>. The pictures on my website were compressed using
+        <a href="https://compresspng.com/">Compress PNG and <a href="https://compressjpeg.com/">Compress JPEG</a>
+        websites. The full performance report can be seen <a href="https://tools.pingdom.com/#59d3373c94000000">here</a>.
+      </p>
+
+      <p>
+        For mobile load times, I have used <a href="https://testmysite.thinkwithgoogle.com/">Think with Google</a>
+        mobile performance evaluation tool. The load time was 3 seconds on a standard 3G speed, and the website received a grade ‘Excellent’.
+      </p>
+
+      <p>
+        By using a changing navigation menu, I am reducing the number of clicks to do routine tasks (like logging in and contacting me).
+        The links to assignments are located on the main page, so that the users can go the interested assignment right away.
+        The current projects are available on both main page and resume, so that the potential employers will not have a hard time looking for them.
+      </p>
+
+      <p>
+        As for optimizing the readability of the website, I have changed my white text shadow from grey to black,
+        because it increases the contrast ratio of the text. I have also moved the shadow a bit to increase visibility
+        on a colored background.
+      </p>
+
+      <p>
+        In my small research into how the website is optimized for screen readers, I have discovered some points where my website was
+        lacking in optimization. First, social media buttons were not optimized for screen reader, so I added a description on each button.
+        Second, I found an <a href="https://webaim.org/techniques/css/invisiblecontent/">article</a> that talks about the invisible link
+        to main content, and I have used that on my index.html and assignments page. It required adding a specialized CSS code to position the link left out of screen.
+        Third, I have added <i>alt</i> attribute to all images in assignment 1 and assignment 2 for screen readers. Finally, I have added <i>title</i> attributes
+        to <i>code</i> tags to describe the content inside of them.
+      </p>
+      <pre>
+        <code title="CSS code snippet - Invisible link">
+          #skip a {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+          }
+          #skip a:focus {
+            position: static;
+            width: auto;
+            height: auto;
+          }
+        </code>
+      </pre>
+      <h5>CSS code for invisible links</h5>
+
+      <br>
+
+      <h3>Analysing Test Cases</h3>
+      <ol>
+        <li>
+          There is no way for anyone to find the classroom directions without leaving the website,
+          as the information is absent. Classfind, which does have directions to all classrooms at Trent,
+          is not in any way linked on Trent website, so the user ends up bouncing around a couple of links.
+          Unfortunately for Trent, the website search also does not reveal any useful information.
+        </li>
+        <li>
+          On the first try finding the session dates for graduate studies I have accidentally arrived at
+          Academic Timetable, which does not have the information I need. On second try, I clicked on <i>'Current Students'</i>,
+          then <i>'Academic Calendar'</i> under <i>'Academics'</i>, and opened a <i>'Graduate Academic Calendar'</i>.
+          There, on page 13, I found the required information. Search on site again yields no useful information.
+        </li>
+        <li>
+          To find that Blackboard is accessible through myTrent portal, student first needs to click around the website and
+          stumble upon the myTrent section by chance, where it says that the academic records are available on the portal.
+          Alternatively, they can click on myTrent from the navigation menu. On the portal, there is no way to tell that the
+          Blackboard system contains the grades for current classes, so the student bounces another couple of times until finally
+          arriving at the Blackboard index page. There, it is easy to find the course and grades for that course.
+        </li>
+        <li>
+          For HTML&CSS textbook, the second result in Google yielded the desired book on Amazon. However, the search results may vary,
+          as Google tailors the result for a user. Also, the name of the textbook is common, as a lot of books talk about HTML and CSS.
+          The second book, Design of Everyday Things was easier to find, because the name of the book is unique.
+        </li>
+        <li>
+          As I live in Peterborough, ON, finding the Uber in Peterborough, UK is very hard. The only link that I could find about
+          the UK city was Uber Estimator, which told me there is an Uber service and gave me a promo code. Trying different queries
+          (<i>'order Uber Peterborough'</i>, <i>'Uber Peterborough order now'</i>) did not help. Only when specifying that I am looking
+          for a ride in UK Google correctly gave me Uber's website with the possibility to sign up.
+        </li>
+        <li>
+          For the analysis, I used <a href="https://www.youtube.com/watch?v=Ay4Znyz7Twc">this ad</a> by a Republican candidate for Congress.
+          It is an attack ad on the Democrat candidate Jessica Morse. Using DuckDuckGo, I tried queries: 'is Jessica Morse is unbelievable ad true',
+          'Jessica Morse attack ad true or not', and similar queries. Only the second query gave me a somewhat relevant result, but it was about a
+          <a href="https://www.politifact.com/california/statements/2018/jul/24/jessica-morse/has-republican-congressman-tom-mcclintock-authored/">false claim</a>
+          that she made on campaign trail.
+        </li>
+      </ol>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img class="logo-footer-img" src="images/logo-invert.png" alt="Alisher Turubayev logo">
+        </div>
+      </div>
+      <p class="centered white-text">Student under a Rainy Cloud</p>
+      <div class="container">
+        <form action="https://www.linkedin.com/in/alisherturubayev/" target="_blank">
+          <button class="icon-btn" title="LinkedIn profile">
+            <img src="https://img.icons8.com/ios-glyphs/50/333333/linkedin-circled.png">
+          </button>
+        </form>
+        <form action="https://twitter.com/rainystudent" target="_blank">
+          <button class="icon-btn" title="Twitter profile">
+            <img src="https://img.icons8.com/ios-glyphs/50/333333/twitter.png">
+          </button>
+        </form>
+        <form action="https://github.com/alisher-turubayev" target="_blank">
+          <button class="icon-btn" title="GitHub profile">
+            <img src="https://img.icons8.com/ios-glyphs/50/333333/github.png">
+          </button>
+        </form>
+      </div>
+      <p class="centered small white-text">Created by Me @ 2018</p>
+      <p class="centered small white-text">Thanks to Figma, W3Schools</p>
+      <div class="container">
+        <a class="small" href="https://icons8.com">Icon pack by Icons8</a>
+      </div>
+
+    </div>
+  </body>
+</html>

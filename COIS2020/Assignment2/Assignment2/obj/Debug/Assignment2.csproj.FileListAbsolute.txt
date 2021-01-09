@@ -1,0 +1,14 @@
+C:\Users\Alisher\source\repos\Assignment2\Assignment2\bin\Debug\Assignment2.exe.config
+C:\Users\Alisher\source\repos\Assignment2\Assignment2\bin\Debug\Assignment2.exe
+C:\Users\Alisher\source\repos\Assignment2\Assignment2\bin\Debug\Assignment2.pdb
+C:\Users\Alisher\source\repos\Assignment2\Assignment2\obj\Debug\Assignment2.csprojAssemblyReference.cache
+C:\Users\Alisher\source\repos\Assignment2\Assignment2\obj\Debug\Assignment2.csproj.CoreCompileInputs.cache
+C:\Users\Alisher\source\repos\Assignment2\Assignment2\obj\Debug\Assignment2.exe
+C:\Users\Alisher\source\repos\Assignment2\Assignment2\obj\Debug\Assignment2.pdb
+C:\Users\Alisher\Desktop\University\2018 Fall\COIS2020\Assignments\Assignment 2\Assignment2\Assignment2\bin\Debug\Assignment2.exe.config
+C:\Users\Alisher\Desktop\University\2018 Fall\COIS2020\Assignments\Assignment 2\Assignment2\Assignment2\bin\Debug\Assignment2.exe
+C:\Users\Alisher\Desktop\University\2018 Fall\COIS2020\Assignments\Assignment 2\Assignment2\Assignment2\bin\Debug\Assignment2.pdb
+C:\Users\Alisher\Desktop\University\2018 Fall\COIS2020\Assignments\Assignment 2\Assignment2\Assignment2\obj\Debug\Assignment2.csprojAssemblyReference.cache
+C:\Users\Alisher\Desktop\University\2018 Fall\COIS2020\Assignments\Assignment 2\Assignment2\Assignment2\obj\Debug\Assignment2.csproj.CoreCompileInputs.cache
+C:\Users\Alisher\Desktop\University\2018 Fall\COIS2020\Assignments\Assignment 2\Assignment2\Assignment2\obj\Debug\Assignment2.exe
+C:\Users\Alisher\Desktop\University\2018 Fall\COIS2020\Assignments\Assignment 2\Assignment2\Assignment2\obj\Debug\Assignment2.pdb

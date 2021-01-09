@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&family=Sen&display=swap');
+
+/* Class selectors */
+.error {
+    font-size: 1.2em;
+    color: red;
+}
+
+/* Type selectors */
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Sen', sans-serif;
+}
+
+div {
+    width: 50%;
+    height: 40%;
+    margin: 2.5% auto 2.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+input[type="submit"] {
+    height: auto;
+    width: auto;
+    margin: 1em;
+}
+
+caption {
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+table, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.3em;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}

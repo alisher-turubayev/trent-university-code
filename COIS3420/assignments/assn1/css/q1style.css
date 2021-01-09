@@ -1,0 +1,79 @@
+/* Style the HTML elements according to the following instructions.
+DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS!
+
+/* Give the <body> element a background of #bdc3c7*/
+body {
+  background-color: #bdc3c7;
+}
+
+/* Make the <h1> and <h2> elements text #9b59b6, and the  Inconsolata (Google font), with an appropriate fallback font stack chosen at CSSFontStack.com. Do this with a single style rule.*/
+h1, h2 {
+  color: #9b59b6;
+  font-family: 'Inconsolata', 'Courier New';
+}
+
+/* Make all <li> elements text blue(pick your own hexadecimal blue)*/
+li {
+  color: #1790dd;
+}
+
+/*Change the background on every paragraph to be yellow*/
+p {
+  background-color: yellow;
+}
+
+/*Make all inputs have a 3px red border*/
+input {
+  border: 3px solid red;
+}
+
+/* Give everything with the class 'hello' a white background*/
+.hello {
+  background-color: white;
+}
+
+/* Give the element with id 'special' a 2px solid blue border(pick your own rgb blue)*/
+#special {
+  border: 2px solid rgb(49, 137, 209);
+}
+/*Make the text of all the <p>'s that are nested inside of divs 1.25 times the M-height*/
+div p {
+  font-size: 1.25em;
+}
+
+/*Make only inputs with type 'text' have a gray background*/
+input[type="text"] {
+  background-color: gray;
+}
+
+/* Give both <p>'s inside the 3rd <div> a pink background*/
+div:nth-of-type(3) p {
+  background-color: pink;
+}
+
+/*Make the <h1> element's color change to blue when hovered over */
+h1:hover {
+  color: blue;
+}
+
+/*Make the <a> element's that have been visited gray */
+a:visited {
+  color: gray;
+}
+
+/*Make any div immediatly after a paragraph have a 5px purple border with rounded corners.*/
+p + div {
+  border: 5px solid purple;
+  border-radius: 20px;
+}
+
+/*Make all "checked" checkboxes have a left margin of 5-times the M-height */
+input[type="checkbox"]:checked {
+  margin-left: 5em;
+}
+
+/*Make the first letter of the element with id 'special' green and 3-times the M-height*/
+#special::first-letter {
+  color: green;
+  font-size: 3em;
+}

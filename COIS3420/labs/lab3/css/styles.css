@@ -1,0 +1,63 @@
+:root {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  background: #BA55D3;
+}
+
+a, h1 {
+  color:  #612ca8;
+}
+
+a.button {
+  color: white;
+  background: deeppink;
+}
+
+a.button:hover {
+  color: deeppink;
+  background: white;
+}
+
+button#submit {
+  border-style: outset;
+  border-width: 3px;
+  border-color: white;
+  background: deeppink;
+  color: white;
+}
+
+fieldset {
+  border-style: solid;
+  border-width: 3px;
+  border-color: deeppink;
+}
+
+#choice {
+  font-size: 18px;
+}
+
+label[for=choice] {
+  color: #612ca8;
+  font-size: 18px;
+}
+
+footer div {
+  color: white;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+header {
+  background: linear-gradient(deeppink, transparent);
+}
+
+legend {
+  background: deeppink;
+  color: white;
+}
+
+main {
+  background: white;
+}

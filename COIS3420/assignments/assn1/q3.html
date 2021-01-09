@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <title>Alisher Turubayev's Personal Cave - Welcome!</title>
+	  <!-- Styles & fonts -->
+	  <link rel="stylesheet" href="css/q3styles.css"/>
+	  <script src="https://kit.fontawesome.com/8c66f53faa.js" crossorigin="anonymous"></script>
+	  <!-- Metadata -->
+	  <meta charset="utf-8"/>
+	  <meta name="description" content="Personal website of Alisher Turubayev in the World Wide Web!"/>
+	  <meta name="author" content="Alisher Turubayev, used copyrighted material from @marveltheme 2019"/>
+	  <meta name="keywords" content="Computing,HTML,CSS,Trent"/>
+	  <!-- Responsive design -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <!-- Favicon - generated using https://realfavicongenerator.net/ -->
+	  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	  <link rel="manifest" href="favicon/site.webmanifest">
+	  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	  <link rel="shortcut icon" href="favicon/favicon.ico">
+	  <meta name="msapplication-TileColor" content="#00aba9">
+	  <meta name="msapplication-config" content="favicon/browserconfig.xml">
+	  <meta name="theme-color" content="#ffffff">
+	</head>
+
+	<body>
+		<!--div id="skip"><a href="#maincontent">Skip to main content</a></div-->
+		<header class="banner">
+			<img src="img/logo.jpg" alt="Logo - depicts a student under a rainy cloud"/>
+			<!-- Javascript-enabled translation of the page -->
+			<button type="button" onclick="">Русский</button>
+		</header>
+
+		<div class="banner">
+			<!-- Left-hand nav bar - contains links to profiles -->
+			<div>
+				<h1>Alisher Turubayev</h1>
+				<h2>General Computing &amp; App Development</h2>
+			</div>
+
+			<figure>
+				<img src="img/portrait.png" alt="Photo of me"/>
+				<figcaption>Student under a Rainy Cloud</figcaption>
+			</figure>
+		</div>
+
+		<div class="banner white-span">
+			<figure>
+				<img src="img/logo-trent.jpg" alt="Logo of Trent University"/>
+				<figcaption>Trent University - Challenge the Way You Think</figcaption>
+			</figure>
+			<div>
+				<h2>About me:</h2>
+				<p>
+					I am a third-year Computing Systems student at Trent University.
+					I am an international student from Kazakhstan, with high
+					involvement in campus life.
+				</p>
+				<p>
+					I love creating applications for convenience and simplicity.
+					I am fully adaptable to changing environments and constantly
+					try to expand my horisons.
+				</p>
+				<div class="banner internal-links">
+					<a href="#contact">Send me a message</a>
+					<a href="q3resume.html">See my resume</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="column dark-span">
+			<h2>My Little Blog</h2>
+			<div class="post">
+				<h2>First post!</h2>
+				<p>
+					Hello to my dark-span here! This is where I do updates on the projects
+					I am doing right now! Bookmark this page so that you don't miss out
+					on my struggles to get everything right!
+				</p>
+				<p>P.S.: beware of the rainy cloud!</p>
+			</div>
+
+			<div class="post">
+				<h2>COIS-3420: Adventures</h2>
+				<p>
+					As I finish up on my assignment for the Web Applications Development
+					course, I have a couple of updates! First: it is quite fun to realize
+					new ways to do some simple stuff in CSS. In my previous course (2830),
+					I have been struggling with a <em>display: flex;</em>, but now I have
+					found more information on how to effectively utilize it to create
+					responsive websites!
+				</p>
+				<p>
+					Second: I became a bit more convinced that Web Development is a fun
+					thing to do, but I am probably not going to pursue it as a full-time
+					career. I am still infuriated whenever different browsers interpret
+					scripts differently, and the tideousness of changing every single bit
+					in CSS is not fun. But, I see the appeal: it is kinda fun! Especially
+					seeing the final result.
+				</p>
+				<p>
+					Finally, I have managened to create my own logo for this website!
+					I remembered my password to <a href="https://figma.com">Figma</a>,
+					and I have used this amazing tool to create this logo,
+					which looks kinda slick!
+				</p>
+			</div>
+		</div>
+
+		<footer>
+				<div class="column" id="contact">
+					<h3>Want to reach me?</h3>
+					<form class="column" id="contact-me" action="php/contact.php" method="post">
+						<label>Fill out this form to contact me directly!</label>
+
+						<label>Your name:
+							<input type="text" name="name" required/>
+						</label>
+
+						<label>Your email:
+							<input type="email" name="email" required/>
+						</label>
+
+						<label>A little message:
+							<textarea form="contact-me" name="msg" required></textarea>
+						</label>
+
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+
+				<div class="column">
+					<p>Address: 1600 West Bank Dr., Peterborough ON K9L 0G2</p>
+					<p>alisherturubayev@trentu.ca +705-748-1011</p>
+					<p>&copy; Alisher Turubayev, 2020. With materials from <a href="https://dribbble.com/msnewas">M S Newaz</a> &amp; <a href="https://umwelt.dk">Umwelt</a></p>
+				</div>
+
+				<div class="banner external-links">
+					<a href="https://www.linkedin.com/in/alisherturubayev/"><i class="fab fa-linkedin"></i></a>
+					<a href="https://github.com/rainycloudstudent"><i class="fab fa-github-square"></i></a>
+					<a href="https://discordapp.com/invite/vD4S2uQ"><i class="fab fa-discord"></i></a>
+				</div>
+		</footer>
+	</body>
+</html>

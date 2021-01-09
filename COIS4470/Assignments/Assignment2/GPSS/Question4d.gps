@@ -1,0 +1,23 @@
+*12345678901234567890123456789
+          SIMULATE
+          GENERATE   180,180
+          QUEUE      WAIT1
+          QUEUE      WAIT2
+          QUEUE      WAIT3
+          SEIZE      INTERCOM
+          DEPART     WAIT1
+          ADVANCE    180,60
+          RELEASE    INTERCOM
+          DEPART     WAIT2
+          ADVANCE    15,3
+          SEIZE      WINDOW
+          DEPART     WAIT3
+          ADVANCE    180,120
+          RELEASE    WINDOW
+          TABULATE   RES
+          TERMINATE  1
+* Add current transaction to table
+ RES      TABLE      M1,1200,300,3
+*
+          START      100
+          END

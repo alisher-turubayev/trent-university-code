@@ -1,0 +1,6 @@
+C:\Users\Alisher Turubayev\source\repos\Lab2_1\Lab2_1\bin\Debug\Lab2_1.exe.config
+C:\Users\Alisher Turubayev\source\repos\Lab2_1\Lab2_1\bin\Debug\Lab2_1.exe
+C:\Users\Alisher Turubayev\source\repos\Lab2_1\Lab2_1\bin\Debug\Lab2_1.pdb
+C:\Users\Alisher Turubayev\source\repos\Lab2_1\Lab2_1\obj\Debug\Lab2_1.csproj.CoreCompileInputs.cache
+C:\Users\Alisher Turubayev\source\repos\Lab2_1\Lab2_1\obj\Debug\Lab2_1.exe
+C:\Users\Alisher Turubayev\source\repos\Lab2_1\Lab2_1\obj\Debug\Lab2_1.pdb
