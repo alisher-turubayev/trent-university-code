@@ -1,4 +1,4 @@
-# University Code | Trent University | 2017-2021
+# University Code - B.Sc. (General) in Computer Science | Trent University | 2017-2021
 
 ## Disclaimer
 THE OWNER DOES NOT ENDORSE ACADEMIC DISHONESTY, AS DEFINED IN THE UNDERGRADUATE ACADEMIC INTEGRITY POLICY OF TRENT UNIVERSITY (AVAILABLE ON TRENT WEBSITE: https://www.trentu.ca/vpacademic/academic-integrity).
